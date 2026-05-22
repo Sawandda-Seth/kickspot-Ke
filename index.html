@@ -8,17 +8,34 @@
     <style>
         :root{
             --primary-color: #16a34a;
-            --secondary-color: #14532d;
-            --light-bg: #f0fdf4;
-            --dark-text: #111827;
+            --secondary-color: #15803d;
+            --dark-color: #111827;
+            --light-color: #f3f4f6;
         }
     </style>
 </head>
-<body class="bg-white text-gray-800">
+<body class="bg-gray-100">
   <!--======== Navbar ============-->
   <nav class="bg-white shadow-md fixed w-full top-0 z-50">
-    <div class="flex items-center gap-2">
-        <span class="text-2xl"><img src="" alt=""></span>
+    <div class=" max-w-7xl mx-auto px-6 py-4 flex items-center gap-9 justify between">
+        <span class="text-2xl rounded-2xl shadow-md w-20"><img src="assets/images/logo.png" alt="Kickspot-ke"></span>
+        <div>
+            <h1 class="text-2xl font-bold text-green-600">
+                KickSpot KE
+            </h1>
+        </div>
+        
+        <!-- Navigation links -->
+         <ul class="hidden md:flex gap-8 text-gray-700 font-medium">
+            <Li><a href="#Home" class="hover:text-green-600 transition">Home</a></Li>
+            <Li><a href="#About" class="hover:text-green-600 transition">About</a></Li>
+            <Li><a href="#Book" class="hover:text-green-600 transition">Book</a></Li>
+            <Li><a href="#Contact" class="hover:text-green-600 transition">Contact</a></Li>
+            <Li><a href="login.html" class="hover:text-green-600 transition">Player login</a></Li>
+         </ul>
+
+        <!--login Button-->
+        <a href="dashboard.html" class="bg-green-600 text-white px-5 py-2 rounded-lg hover:bg-green-700 transition">Owner dashboard</a>
     </div>
   </nav>
     
