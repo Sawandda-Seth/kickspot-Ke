@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Owner Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <body class="bg-gray-100">
+        <!-- Header-->
+         <header class="bg-green-700 text-white p-5 shadow-lg flex justify-between items-center">
+            <h1 class="text-3xl font-bold" >
+                Turf Owner Dashboard
+            </h1>
+            <button class="bg-white text-green-700 px-5 py-2 rounde-lg font-semibold">
+                Logout
+            </button>
+         </header>
+         <!-- Main Dashboard -->
+          <div class="p-6">
+
+            <!-- Statistics -->
+             <div class="grid md:grid-cols-3 gap-6 mb-10">
+
+                <!-- Card 1-->
+                 <div class="bg-white p-6 rounded-2xl shadow-lg">
+                    <h2 class="text-gray-500 text-lg">
+                        Total Bookings
+                    </h2>
+                    <p class="text-4xl font-bold mt-3 text-green-700">
+                        120
+                    </p>
+                 </div>
+
+                 <!-- Card 2-->
+                  <div class="bg-white p-6 rounded-2xl shadow-lg">
+                    <h2 class="text-gray-500 text-lg">
+                        Tickects Sold
+                    </h2>
+                    <p class="text-4xl font-bold mt-3 text-green-700">
+                        540
+                    </p>
+                  </div>
+
+                  <!-- Card 3-->
+                   <div class="b g-white p-6 rounded-2xl  shadow-lg">
+                    <h2 class="text-gray-500 text-lg">
+                        Revenue Generated
+                    </h2>
+                    <p class="text-4xl font-bold mt-3 text-green-700">
+                        KES 90,000
+                    </p>
+                   </div>
+             </div>
+             <!-- Booking Table -->
+              <div class="bg-white rounded-2xl shadow-lg overflow-x-auto">
+                <table class="w-full">
+
+                    <thead class="bg-green-700 text-white">
+                        <tr>
+                            <th aria-colspan=""></th>
+                        </tr>
+                    </thead>
+                </table>
+              </div>
+          </div>
+    </body>
+    
+</body>
+</html>
