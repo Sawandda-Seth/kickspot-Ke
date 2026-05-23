@@ -6,19 +6,16 @@
     <title>Kicksport Kenya</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/d1ee7ce38e.js" crossorigin="anonymous"></script>
-    <style>
-        :root{
-            --primary-color: #16a34a;
-            --secondary-color: #15803d;
-            --dark-color: #111827;
-            --light-color: #f3f4f6;
-        }
-    </style>
 </head>
+<style>
+    html{
+        scroll-behavior: smooth;
+    }
+</style>
 <body class="bg-gray-100">
   <!--======== Navbar ============-->
-  <nav class="bg-{var(--dark-color)} text-white fixed w-full top-0 z-50 shadow-lg">
-    <div class=" max-w-7xl mx-auto px-6 py-4 flex items-center gap-9 justify between">
+  <nav class="bg-gray-900 text-white fixed w-full top-0 z-50 shadow-lg">
+    <div class=" max-w-7xl mx-auto px-6 py-4 flex items-center gap-9 justify-between">
         <span class="text-2xl rounded-2xl shadow-md w-20"><img src="assets/images/logo.png" alt="Kickspot-ke"></span>
         <div>
             <h1 class="text-2xl font-bold text-green-600">
@@ -28,14 +25,13 @@
         
         <!-- Navigation links -->
          <!--Desktop Menu-->
-         <ul class="hidden md:flex gap-8 text-gray-700 font-medium">
+         <ul class="hidden md:flex gap-8 text-white font-medium">
             <Li><a href="#" class="hover:text-green-600 transition">Home</a></Li>
             <Li><a href="#About" class="hover:text-green-600 transition">About</a></Li>
             <Li><a href="#Book" class="hover:text-green-600 transition">Book</a></Li>
             <Li><a href="#Contact" class="hover:text-green-600 transition">Contact</a></Li>
             <Li><a href="login.html" class="hover:text-green-600 transition">Player login</a></Li>
          </ul>
-         </div>
          <!-- Hamburger Button-->
           <button id="menu-btn" class="md:hidden text-3xl">
             <i class="fa-solid fa-bars"></i>
@@ -57,7 +53,8 @@
             </h2>
             <ul class="space-y-4">
                 <li>
-                    <a href="#" class="block p-3 rounded-lg hover:bg-green-100">
+                    <a href="#" class="flex items-center gap-3 p-3 rounded-lg hover:bg-green-100 hover:text-green-700 transition">
+<i class="fa-solid fa-futbol"></i>
                         Home
                     </a>
                 </li>
@@ -89,7 +86,7 @@
 
             <!-- ==============Hero Section ================ -->
              <section
-             class="bg-cover bg-center h-{90vh} flex items-center"
+             class="bg-cover bg-center h-[90vh] flex items-center"
              style="background-image: url(assets/images/Background\ Hero.jpg);">
              <div class="bg-black/60 w-full h-full flex items-center">
                 <div class="max-w-6xl mx-auto px-6 text-white">
@@ -98,16 +95,17 @@
                         Find & Book Football Turf in Kenya
                     </h1>
 
-                    <p class="mt-6 text-lg md:w-1">
+                    <p class="mt-6 text-lg md:w-2/3">
                         Easily locate football pitches and turfs, reserve playing fields,
                         organize matches and manage Tickecting for the football events  across Kenya.
                     </p>
 
-                    <div class="mt-8 flex flew-wrap gap-4">
-                        <a href="#book" class="bg-green-600 hover:bg-green-700 px-0 py-4 rounded-lg font-semibold">
+                    <div class="mt-8 flex flex-wrap gap-4">
+                        <a href="#book" class="bg-green-600 hover:bg-green-700 px-8 py-4 rounded-xl font-semibold shadow-lg transition duration-300">
                             Book Turf
                         </a>
-                        <a href="dashboard.html" class="border border-white hover:bg-white hover:text-black px-8 py-4 rounded-lg font-semibold">
+                        <a href="dashboard.html"
+                         class="border border-white hover:bg-white hover:text-black px-8 py-4 rounded-xl font-semibold shadow-lg transition duration-300">
                             Owner Dashboard
                         </a>
 
@@ -126,10 +124,10 @@
                             Everything football players and turf owners need.
                         </p>
                     </div>
-                    <div class="grid md-cols-3 gap-8">
+                    <div class="grid md:grid-cols-3 gap-8">
 
                         <!-- Card 1 -->
-                         <div class="bg-gray-100 p-8 rounded-2xl shadow-lg">
+                         <div class="bg-gray-100 p-8 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-300">
                             <div class="text-5xl mb-4"></div>
                             <h3 class="text-2xl font-bold mb-3">
                                 Turf Booking
@@ -140,7 +138,7 @@
                          </div>
 
                          <!-- Card 2 -->
-                          <div class="bg-gray-100 p-8 rounded-2xl shadow-lg">
+                          <div class="bg-gray-100 p-8 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-300">
                             <div class="text-5xl mb-4"></div>
                             <h3 class="text-2xl font-bold mb-3">
                                 Match ticketing
@@ -152,7 +150,7 @@
                           </div>
 
                           <!-- Card 3 -->
-                           <div class="bg-gray-100 p-8 rounded-2xl shadow-lg">
+                           <div class="bg-gray-100 p-8 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-300">
                             <div class="text-5xl mb-4"></div>
 
                             <h3 class="text-2xl font-bold mb-3">
@@ -169,7 +167,7 @@
                 </div>
              </section>
              <!--================= Booking Section ===============-->
-             <section id="Book" class="py-20 0x-6 bg-gray-100">
+             <section id="Book" class="py-20 px-6 bg-gray-100">
                 <div class="max-w-5xl mx-auto">
 
                     <div class="text-center mb-10">
@@ -182,7 +180,7 @@
                         </p>
                     </div>
                     <!--Booking form -->
-                    <form class="bg-white p-8nriunded-2xl shadow-xl">
+                    <form class="bg-white p-8 rounded-2xl shadow-xl">
                         <div class="grid md:grid-cols-2 gap-6">
                             <div>
                                 <label class="block mb-2 font font-semibold">
@@ -190,7 +188,7 @@
                                 </label>
 
                                 <input type="text" placeholder="Enter your name"
-                                class="w-full border rounde-lg px-4 py-3 focus:outline-none" required/>
+                                class="w-full border rounded-lg px-4 py-3 focus:outline-none" required/>
                             </div>
 
                             <!-- Location -->
@@ -236,10 +234,9 @@
                         class="rounded-2xl shadow-2xl" 
                         alt="Football Turf"/>
                     </div>
-                </div>
 
                 <div>
-                    <h2 class="tex-4xl font-bold text-gray-800">
+                    <h2 class="text-4xl font-bold text-gray-800">
                         About Kickspot KE
                     </h2>
                     <p class="mt-6 text-gray-600 leading-8">
@@ -247,9 +244,107 @@
                         discover available football grounds, reserve available spaces online 
                         and manage football events with modern ticketing systems.
                     </p>
-                </div>
+                    <p class="mt-4 text-gray-600 leading-8">
+                        Turf owners can also monitor bookings,payments,schedules and 
+                        customer requests from their dashboard.
+                    </p>
+                </div>    
              </section>
+
+             <!-- ============ Contact Section ==============-->
+              <section id="Contact" class="py-20 px-6 bg-gray-900 text-white">
+                <div class="max-w-5xl mx-auto text-center">
+                    <h2 class="text-4xl font-bold">
+                        Contact Us
+                    </h2>
+                    <p class="mt-4 text-gray-300">
+                        Reach out for support or partnership opportunities.
+                    </p>
+                        <div class="grid md:grid-cols-3 gap-6 mt-10">
+                           <div class="bg-white/10 p-6 rounded-2xl">
+                              <i class="fa-solid fa-envelope text-3xl text-green-400"></i>
+                              <p class="mt-3">support@kickspotke.com</p>
+                            </div>
+
+                        </div>
+                        <div class="grid md:grid-cols-3 gap-6 mt-10">
+                           <div class="bg-white/10 p-6 rounded-2xl">
+                              <i class="fa-solid fa-envelope text-3xl text-green-400"></i>
+                              <p class="mt-3">+254 732416502</p>
+                            </div>
+
+                        </div>
+                        <div class="grid md:grid-cols-3 gap-6 mt-10">
+                           <div class="bg-white/10 p-6 rounded-2xl">
+                            <i class="fa-solid fa-phone"></i>
+                              <p class="mt-3">Nairobi, Kenya</p>
+                            </div>
+
+                        </div>
+              </section>
          </main>
      </div>
+       <!-- FOOTER -->
+     <footer class="bg-[#0f172a] text-white pt-14 pb-8 px-6">
+     <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+        <h3 class="text-3xl font-extrabold text-green-400 mb-3">
+            Kickspot KE
+        </h3>
+        <p class="text-gray-300 mb-5">
+            Connecting Footballers
+        </p>
+        <ul class="space-y-3 text-gray-300">
+            <li class="flex items-center gap-3">
+                <i class="fa-solid fa-location-dot text-green-400"></i> Nairobi</li>
+                    <li class="flex items-center gap-3">
+                        <i class="fa-solid fa-envelope text-green-400"></i>Kickspot-ke</li>
+        </ul>
+     </div>
+
+
+     <div class="footer-links">
+        <h4  class="text-2xl font-bold text-green-400 mb-4">
+            Navigation
+        </h4>
+                <nav class="flex flex-col gap-3">
+                    <a href="#home"  
+                    class="text-gray-300 hover:text-green-400 transition duration-300">Home</a>
+                    <a href="#about"
+                     class="text-gray-300 hover:text-green-400 transition duration-300">About</a>
+                    <a href="#book"
+                    class="text-gray-300 hover:text-green-400 transition duration-300">Book</a>
+                    <a href="#contact"
+                    class="text-gray-300 hover:text-green-400 transition duration-300">Contact</a>
+                </nav>
+    </div>
+    <div class="footer-socials">
+                <h4 class="text-2xl font-bold text-green-400 mb-4">
+                    Find us
+                </h4>
+                <div class="flex gap-5 text-2xl">
+                    <a href="#"  class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center
+                     hover:bg-green-500 hover:scale-110 transition duration-300">
+                        <i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#" class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center
+                     hover:bg-green-500 hover:scale-110 transition duration-300">
+                        <i class="fa-brands fa-github"></i></a>
+                    <a href="#"  class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center
+                       hover:bg-green-500 hover:scale-110 transition duration-300">
+                        <i class="fa-brands fa-x-twitter"></i></a>  
+              </div>
+    </div>
+         <div class="flex flex-col justify-center lg:items-end">
+            <div class="bg-white/10 backdrop-blur-md rounded-2xl p-6 text-center shadow-lg">
+                <i class="fa-solid fa-shield-heart text-4xl text-yellow-400 mb-4"></i>
+                <h5 class="text-lg font-bold mb-2">
+                    Book a Pitch Today
+                </h5>
+
+                <small class="text-gray-300">
+                    &copy; 2026 Kickspot KE. All Rights Reserved.
+                </small>
+                </div>
+                </div>
+   </footer>   
 </body>
 </html>
