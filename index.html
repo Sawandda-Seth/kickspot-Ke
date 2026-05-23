@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kicksport Kenya</title>
     <script src="https://cdn.tailwindcss.com"></script>
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+    <script src="https://kit.fontawesome.com/d1ee7ce38e.js" crossorigin="anonymous"></script>
     <style>
         :root{
             --primary-color: #16a34a;
@@ -35,15 +35,221 @@
             <Li><a href="#Contact" class="hover:text-green-600 transition">Contact</a></Li>
             <Li><a href="login.html" class="hover:text-green-600 transition">Player login</a></Li>
          </ul>
+         </div>
          <!-- Hamburger Button-->
           <button id="menu-btn" class="md:hidden text-3xl">
             <i class="fa-solid fa-bars"></i>
           </button>
-          <!---->
-        <!--login Button-->
-        <a href="dashboard.html" class="bg-green-600 text-white px-5 py-2 rounded-lg hover:bg-green-700 transition">Owner dashboard</a>
-    </div>
+          <!--Mobile menu-->
+          <div id="mobile-menu"  class="hidden md:hidden bg-gray-900 px-6 pb-4">
+            <a href="#" class="block py-2 hover:text-green-600">Home</a>
+            <a href="#about" class="block py-2 hover:text-green-600">About</a>
+            <a href="#book" class="block py-2 hover:text-green-600">Book</a>
+            <a href="#contact" class="block py-2 hover:text-green-600">Conatct</a>
+          </div>
   </nav>
-    
+    <!-- ======================== MAIN CONTAINER ======================== -->
+     <div class="flex pt-20">
+        <!-- ========= SIDEBAR ========= -->
+         <aside class="hidden lg:block w-64 bg-white shadow-lg min-h-screen p-6">
+            <h2 class="text-xl font-bold mb-6 text-green-700">
+                Dashboard
+            </h2>
+            <ul class="space-y-4">
+                <li>
+                    <a href="#" class="block p-3 rounded-lg hover:bg-green-100">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="block p-3 rounded-lg hover:bg-green-100">
+                        turf
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="block p-3 rounded-lg hover:bg-green-100">
+                        Tickecting
+                    </a>
+                </li>
+                <li>
+                    <a href="dashboard.html" class="block p-3 rounded-lg hover:bg-green-100">
+                        Owner Dashboard
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="block p-3 rounded-lg hover:bg-green-100">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+         </aside>
+         <!--======================== Main Content ====================-->
+         <main class="flex-1">
+
+            <!-- ==============Hero Section ================ -->
+             <section
+             class="bg-cover bg-center h-{90vh} flex items-center"
+             style="background-image: url(assets/images/Background\ Hero.jpg);">
+             <div class="bg-black/60 w-full h-full flex items-center">
+                <div class="max-w-6xl mx-auto px-6 text-white">
+
+                    <h1 class="text-5xl md:text-6xl font-bold leading-tight">
+                        Find & Book Football Turf in Kenya
+                    </h1>
+
+                    <p class="mt-6 text-lg md:w-1">
+                        Easily locate football pitches and turfs, reserve playing fields,
+                        organize matches and manage Tickecting for the football events  across Kenya.
+                    </p>
+
+                    <div class="mt-8 flex flew-wrap gap-4">
+                        <a href="#book" class="bg-green-600 hover:bg-green-700 px-0 py-4 rounded-lg font-semibold">
+                            Book Turf
+                        </a>
+                        <a href="dashboard.html" class="border border-white hover:bg-white hover:text-black px-8 py-4 rounded-lg font-semibold">
+                            Owner Dashboard
+                        </a>
+
+                    </div>
+                </div>
+             </div>
+             </section>
+             <!--============== Features Section =================-->
+             <section class="py-20 px-6 bg-white">
+                <div class="max-w-6xl mx-auto">
+                    <div class="text-center mb-14">
+                        <h2 class="text-4xl font-bold text-gray-800">
+                            Our Features
+                        </h2>
+                        <p class="text-gray-500 mt-4">
+                            Everything football players and turf owners need.
+                        </p>
+                    </div>
+                    <div class="grid md-cols-3 gap-8">
+
+                        <!-- Card 1 -->
+                         <div class="bg-gray-100 p-8 rounded-2xl shadow-lg">
+                            <div class="text-5xl mb-4"></div>
+                            <h3 class="text-2xl font-bold mb-3">
+                                Turf Booking
+                            </h3>
+                            <p class="text-gray-600">
+                                Search nearby football pitches and reserve your preferred playing time instantly
+                            </p>
+                         </div>
+
+                         <!-- Card 2 -->
+                          <div class="bg-gray-100 p-8 rounded-2xl shadow-lg">
+                            <div class="text-5xl mb-4"></div>
+                            <h3 class="text-2xl font-bold mb-3">
+                                Match ticketing
+                            </h3>
+                            <p class="text-gray-600">
+                                Sell and maange tickets for tournaments and footballl matches
+                                directly from the platform.
+                            </p>
+                          </div>
+
+                          <!-- Card 3 -->
+                           <div class="bg-gray-100 p-8 rounded-2xl shadow-lg">
+                            <div class="text-5xl mb-4"></div>
+
+                            <h3 class="text-2xl font-bold mb-3">
+                                location finder
+                            </h3>
+
+                            <p class="text-gray-600">
+                                Locate football pitches around major cities Nairobi, kisumu
+                                and Mombasa in Kenya
+                            </p>
+                           </div>
+
+                    </div>
+                </div>
+             </section>
+             <!--================= Booking Section ===============-->
+             <section id="Book" class="py-20 0x-6 bg-gray-100">
+                <div class="max-w-5xl mx-auto">
+
+                    <div class="text-center mb-10">
+                        <h2 class="text-4xl font-bold text-gray-800">
+                            Book a turf
+                        </h2>
+
+                        <p class="text-gray-500 mt-3">
+                            Reserve your favorite football pitch in minutes.
+                        </p>
+                    </div>
+                    <!--Booking form -->
+                    <form class="bg-white p-8nriunded-2xl shadow-xl">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block mb-2 font font-semibold">
+                                    Full Name
+                                </label>
+
+                                <input type="text" placeholder="Enter your name"
+                                class="w-full border rounde-lg px-4 py-3 focus:outline-none" required/>
+                            </div>
+
+                            <!-- Location -->
+                             <div>
+                                <label class="block mb-2 font font-semibold">
+                                    Select location
+                                </label>
+                                <select class="w-full border rounded-lg px-4 py-3 focus:outline-none">
+                                    <option>Nairobi</option>
+                                    <option>Mombasa</option>
+                                    <option>Kisimu</option>
+                                </select>
+                             </div>
+
+                             <!-- Date -->
+                              <div>
+                                <label class="block mb-2 font font-semibold">
+                                    Match Date
+                                </label>
+                                <input type="date" class="w-full border rounde-lg px-4 py-3 focus:outline-none" required/>
+                              </div>
+
+                              <!-- Time -->
+                               <div>
+                                <label class="block mb-2 font-semibold">
+                                    Match Time
+                                </label>
+                                <input type="time" class="w-full border rounde-lg px-4 py-3 focus:outline-none" required/>
+                               </div>
+                        </div>
+                        <button class="mt-8 bg-green-600 hover:bg-green-700 
+                        text-white px-8 py-4 rounded-lg font-semibold">
+                        Confirm Booking
+                        </button>
+                    </form>
+                </div>
+             </section>
+             <!--====================About Section ========================-->
+             <section id="About" class="py-20 px-6 bg-white">
+                <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <img src="assets/images/Background image 3.jpg"
+                        class="rounded-2xl shadow-2xl" 
+                        alt="Football Turf"/>
+                    </div>
+                </div>
+
+                <div>
+                    <h2 class="tex-4xl font-bold text-gray-800">
+                        About Kickspot KE
+                    </h2>
+                    <p class="mt-6 text-gray-600 leading-8">
+                        Kickdpot Ke helpers footballers and teams across Kenya
+                        discover available football grounds, reserve available spaces online 
+                        and manage football events with modern ticketing systems.
+                    </p>
+                </div>
+             </section>
+         </main>
+     </div>
 </body>
 </html>
