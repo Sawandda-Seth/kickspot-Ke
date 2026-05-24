@@ -36,6 +36,7 @@
           <button id="menu-btn" class="md:hidden text-3xl">
             <i class="fa-solid fa-bars"></i>
           </button>
+          </div>
           <!--Mobile menu-->
           <div id="mobile-menu"  class="hidden md:hidden bg-gray-900 px-6 pb-4">
             <a href="#" class="block py-2 hover:text-green-600">Home</a>
@@ -53,18 +54,18 @@
             </h2>
             <ul class="space-y-4">
                 <li>
-                    <a href="#" class="flex items-center gap-3 p-3 rounded-lg hover:bg-green-100 hover:text-green-700 transition">
+                    <a href="#" class="flex items-center gap-3 p-3 rounded-lg hover:bg-green-100 hover:text-green-700 transition duration-300">
 <i class="fa-solid fa-futbol"></i>
                         Home
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="block p-3 rounded-lg hover:bg-green-100">
+                    <a href="#" class="flex items-center gap-3 p-3 rounded-lg hover:bg-green-100 hover:text-green-700 transition duration-300">
                         turf
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="block p-3 rounded-lg hover:bg-green-100">
+                    <a href="#" class="flex items-center gap-3 p-3 rounded-lg hover:bg-green-100 hover:text-green-700 transition duration-300">
                         Tickecting
                     </a>
                 </li>
@@ -88,7 +89,7 @@
              <section
              class="bg-cover bg-center h-[90vh] flex items-center"
              style="background-image: url(assets/images/Background\ Hero.jpg);">
-             <div class="bg-black/60 w-full h-full flex items-center">
+             <div class="bg-gradient-to-r from-black/80 via-black/60 to-black-/40 w-full h-full flex items-center">
                 <div class="max-w-6xl mx-auto px-6 text-white">
 
                     <h1 class="text-5xl md:text-6xl font-bold leading-tight">
@@ -128,7 +129,9 @@
 
                         <!-- Card 1 -->
                          <div class="bg-gray-100 p-8 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-300">
-                            <div class="text-5xl mb-4"></div>
+                            <div class="text-5xl mb-4">
+                                <i class="fa-solid fa-futbol"></i>
+                            </div>
                             <h3 class="text-2xl font-bold mb-3">
                                 Turf Booking
                             </h3>
@@ -139,19 +142,49 @@
 
                          <!-- Card 2 -->
                           <div class="bg-gray-100 p-8 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-300">
-                            <div class="text-5xl mb-4"></div>
+                            <div class="text-5xl mb-4">
+                                 <i class="fa-solid fa-ticket"></i>
+                            </div>
                             <h3 class="text-2xl font-bold mb-3">
                                 Match ticketing
                             </h3>
                             <p class="text-gray-600">
-                                Sell and maange tickets for tournaments and footballl matches
+                                Sell and manage tickets for tournaments and footballl matches
                                 directly from the platform.
                             </p>
                           </div>
+                          <!-- Card 3-->
+                           <div class="bg-gray-100 p-8 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y transition duration-300 group">
 
-                          <!-- Card 3 -->
+                            <div class="w-16 h-16 rounded-full bg-green-100 flex items-center justify-center mb-6 group-hover:bg-green-600 transition duration-300">
+                                <i class="fa-solid fa-ticket text-3xl text-green-600 
+                                 group-hover:text-white transition duration-300"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold mnb-3 text-gray-800">
+                                Fan ticketing
+                            </h3>
+                            <p class="text-gray-600 leading-7">
+                                Fans can easily purchase match and tournament tickets online,
+                                receive instant booking confirmations and access to football games.
+                            </p>
+                            <ul class="mt-5 space-y-2 text-sm text-gray-700">
+                                <li class="felx items-center gap-2"><i class="fa-solid fa-check text-green-600"></i>
+                                     Match tickets
+                                </li>
+                                <li class="felx items-center gap-2"><i class="fa-solid fa-check text-green-600"></i>
+                                    Access Passes
+                                </li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-600"></i>
+                                      Instant Booking Confirmation
+                                </li>
+                            </ul>
+                           </div>
+
+                          <!-- Card 4 -->
                            <div class="bg-gray-100 p-8 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-300">
-                            <div class="text-5xl mb-4"></div>
+                            <div class="text-5xl mb-4">
+                                 <i class="fa-solid fa-location-dot"></i>
+                            </div>
 
                             <h3 class="text-2xl font-bold mb-3">
                                 location finder
@@ -208,7 +241,7 @@
                                 <label class="block mb-2 font font-semibold">
                                     Match Date
                                 </label>
-                                <input type="date" class="w-full border rounde-lg px-4 py-3 focus:outline-none" required/>
+                                <input type="date" class="w-full border rounded-lg px-4 py-3 focus:outline-none" required/>
                               </div>
 
                               <!-- Time -->
@@ -216,7 +249,7 @@
                                 <label class="block mb-2 font-semibold">
                                     Match Time
                                 </label>
-                                <input type="time" class="w-full border rounde-lg px-4 py-3 focus:outline-none" required/>
+                                <input type="time" class="w-full border rounded-lg px-4 py-3 focus:outline-none" required/>
                                </div>
                         </div>
                         <button class="mt-8 bg-green-600 hover:bg-green-700 
@@ -226,6 +259,54 @@
                     </form>
                 </div>
              </section>
+             <!-- ================= Fan Ticketing Section ================= -->
+<section class="py-20 px-6 bg-white">
+
+    <div class="max-w-6xl mx-auto">
+
+        <!-- Heading -->
+        <div class="text-center mb-14">
+
+            <h2 class="text-4xl font-bold text-gray-800">
+                Fan Ticketing
+            </h2>
+
+            <p class="text-gray-500 mt-4">
+                Purchase tickets for football matches and tournaments across Kenya.
+            </p>
+
+        </div>
+
+        <!-- Ticket Cards -->
+        <div class="grid md:grid-cols-3 gap-8">
+
+            <!-- Match Card -->
+            <div class="bg-gray-100 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300">
+
+                <img src="assets/images/ticket.jpg"
+                class="h-52 w-full object-cover"
+                alt="Football Match">
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold">
+                        Game
+                    </h3>
+                    <p class="text-gray-600 mt-3">
+                        Zawadi fc vs Legends
+                    </p>
+                    <div class="mt-4 flex justify-between items-center">
+                        <span class="text-green-600 font-bold text-xl">
+                            Ksh300
+                        </span>
+                        <button class="bg-green-600 hover:bg-green-700 
+                        text-white px-5 py-2 rounded-lg transition">
+                            Buy Ticket
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
              <!--====================About Section ========================-->
              <section id="About" class="py-20 px-6 bg-white">
                 <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
@@ -240,7 +321,7 @@
                         About Kickspot KE
                     </h2>
                     <p class="mt-6 text-gray-600 leading-8">
-                        Kickdpot Ke helpers footballers and teams across Kenya
+                        Kickdsot Ke helpers footballers and teams across Kenya
                         discover available football grounds, reserve available spaces online 
                         and manage football events with modern ticketing systems.
                     </p>
@@ -248,7 +329,8 @@
                         Turf owners can also monitor bookings,payments,schedules and 
                         customer requests from their dashboard.
                     </p>
-                </div>    
+                </div>  
+                </div>  
              </section>
 
              <!-- ============ Contact Section ==============-->
