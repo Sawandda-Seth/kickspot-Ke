@@ -101,7 +101,7 @@ Contributions are welcome!
 
 ---
 
-## 🚀 Future Roadmap
+##  Future Roadmap
 
 - Interactive football pitch maps
 - Online tournament registration
