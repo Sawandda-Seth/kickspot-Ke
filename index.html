@@ -32,19 +32,22 @@
             <Li><a href="#Contact" class="hover:text-green-600 transition">Contact</a></Li>
             <Li><a href="login.html" class="hover:text-green-600 transition">Player login</a></Li>
          </ul>
-         <!-- Hamburger Button-->
-          <button id="menu-btn" class="md:hidden text-3xl">
-            <i class="fa-solid fa-bars"></i>
-          </button>
-          </div>
+  
           <!--Mobile menu-->
-          <div id="mobile-menu"  class="hidden md:hidden bg-gray-900 px-6 pb-4">
-            <a href="#" class="block py-2 hover:text-green-600">Home</a>
-            <a href="#about" class="block py-2 hover:text-green-600">About</a>
-            <a href="#book" class="block py-2 hover:text-green-600">Book</a>
-            <a href="#contact" class="block py-2 hover:text-green-600">Conatct</a>
-          </div>
-  </nav>
+          <input type="checkbox" id="menu-toggle" class="hidden peer">
+          <label for="menu-toggle" class="md:hidden text-2xl cursor-pointer hover:text-green-600 transition select-none">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+            <div class="hidden peer-checked:block absolute top-full left-0 w-full bg-gray-900 border-t border-gray-800 px-6 py-4 shadow-xl md:hidden transition-all duration-300">
+                <ul class="flex flex-col gap-4 font-medium">
+           <li><a href="#" class="block py-2 hover:text-green-600">Home</a></li>
+            <li><a href="#about" class="block py-2 hover:text-green-600">About</a></li>
+            <li><a href="#book" class="block py-2 hover:text-green-600">Book</a></li>
+            <li><a href="#contact" class="block py-2 hover:text-green-600">Conatct</a></li>
+            </ul>
+            </div>
+       </div>
+    </nav>
     <!-- ======================== MAIN CONTAINER ======================== -->
      <div class="flex pt-20">
         <!-- ========= SIDEBAR ========= -->
@@ -55,7 +58,7 @@
             <ul class="space-y-4">
                 <li>
                     <a href="#" class="flex items-center gap-3 p-3 rounded-lg hover:bg-green-100 hover:text-green-700 transition duration-300">
-<i class="fa-solid fa-futbol"></i>
+                        <i class="fa-solid fa-futbol"></i>
                         Home
                     </a>
                 </li>
